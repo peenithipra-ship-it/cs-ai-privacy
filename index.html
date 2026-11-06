@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – CS AI Order Information</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans Thai", sans-serif; line-height: 1.65; color: #1f2937; max-width: 760px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; }
+  .meta { color: #6b7280; font-size: 14px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f9fafb; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Extension: CS AI Order Information (version 1.4.1)<br>
+Last updated: November 6, 2026</p>
+
+<h2>1. About this extension</h2>
+<p>CS AI Order Information is an internal tool for Shopee customer support agents. It adds a side panel to the internal CS and admin pages the agent is already authorised to use, so the agent can look up merchant information, order delivery information, payment and refund information, and calculate shipping fees while handling a support case.</p>
+<p>The extension is operated by ShopeeFood Customer Service Supervisor. Questions about this policy can be sent to <a href="mailto:peenithi.pra@shopee.com">peenithi.pra@shopee.com</a>.</p>
+
+<h2>2. Information the extension handles</h2>
+<table>
+  <tr><th>Category</th><th>What</th><th>Why</th></tr>
+  <tr>
+    <td>Agent identity</td>
+    <td>The company email address of the Chrome profile the agent is signed in to (company domains only; other addresses are discarded).</td>
+    <td>To identify the agent, check the agent against the team's approved-user list, handle access requests, and keep each agent's history separate.</td>
+  </tr>
+  <tr>
+    <td>Case references entered by the agent</td>
+    <td>Store ID, Order ID, case ID, driver ID and menu or option names typed into the panel.</td>
+    <td>To run the lookups the agent requests and to pre-fill the team's Google Form.</td>
+  </tr>
+  <tr>
+    <td>Information retrieved from internal systems</td>
+    <td>Merchant details (store name, merchant ID, phone numbers, email, latitude/longitude, store size, GP rates), order delivery details (driver ID, order amount, coins, shipping fee, delivered count), payment and refund details, and menu names and prices.</td>
+    <td>To display reference information to the agent for the case being handled and to calculate shipping fees.</td>
+  </tr>
+</table>
+<p>The extension reads only pages the agent is already signed in to and authorised to view. It does not read browsing history, other websites, or the content of unrelated tabs.</p>
+
+<h2>3. How information is used and shared</h2>
+<ul>
+  <li><b>Display and calculation.</b> Retrieved information is shown to the agent in the side panel. The extension never contacts customers and never submits forms on the agent's behalf.</li>
+  <li><b>Internal AI assistant.</b> Where the agent uses the assistant feature, lookup results and the agent's user ID are sent to the internal Smart Orchestrator service (smart.shopee.io) to produce an answer for the agent.</li>
+  <li><b>Access control.</b> The agent's company email is checked against an approved-user list kept in a Google Sheet, and access requests are submitted to a Google Apps Script endpoint operated by the team.</li>
+  <li><b>No other sharing.</b> Information is not sold, used for advertising, or shared with any other third party, and is not used for any purpose unrelated to the extension's single purpose of supporting the agent's case.</li>
+</ul>
+
+<h2>4. Data stored on the device</h2>
+<p>The extension uses <code>chrome.storage.local</code> on the agent's own device to store:</p>
+<ul>
+  <li>the most recent order and payment/refund lookup results, so they are still shown when the panel is reopened;</li>
+  <li>a temporary case ID and driver ID used to pre-fill the Google Form (removed immediately after the form is filled);</li>
+  <li>the agent's user ID (company email) and sign-in state.</li>
+</ul>
+<p>This data stays in the browser and is removed when the extension is uninstalled or when the agent clears the extension's storage.</p>
+
+<h2>5. Security</h2>
+<p>All communication with internal systems takes place over HTTPS. Access to the extension requires approval, and the extension only operates on the Shopee internal domains and Google services listed in its permissions.</p>
+
+<h2>6. Permissions</h2>
+<p>The extension requests only the permissions it needs: <code>scripting</code>, <code>tabs</code> and <code>windows</code> (to open background pages and read the information the agent asks for), <code>storage</code> (local settings and recent results), <code>alarms</code> (to keep a lookup running until it finishes), <code>notifications</code> (to tell the agent a lookup has finished), and <code>identity</code> / <code>identity.email</code> (to identify the agent).</p>
+
+<h2>7. Your choices</h2>
+<p>An agent can stop all processing at any time by uninstalling the extension. To remove locally stored data, clear the extension's storage from the Chrome extensions page. Requests about data held in internal systems should be sent to <a href="mailto:peenithi.pra@shopee.com">peenithi.pra@shopee.com</a>.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If the extension's data practices change, this page will be updated and the "Last updated" date above will change.</p>
+
+<h2>9. Contact</h2>
+<p>ShopeeFood Customer Service Supervisor<br>
+<a href="mailto:peenithi.pra@shopee.com">peenithi.pra@shopee.com</a></p>
+
+</body>
+</html>
